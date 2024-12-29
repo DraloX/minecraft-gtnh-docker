@@ -48,4 +48,5 @@ docker exec my-container-name ./savedata.sh
 
 * `data` - config files
 * `logs` - server logs
+* `backups` - server backups
 * `worlds` - worlds directory

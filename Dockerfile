@@ -22,5 +22,6 @@ RUN chmod +x savedata.sh
 # add volumes for worlds, logs and data to persist on host
 VOLUME /opt/server/worlds
 VOLUME /opt/server/logs
+VOLUME /opt/server/backups
 VOLUME /opt/server/_data
 CMD ["/opt/server/start.sh"]

@@ -5,6 +5,7 @@ services:
     ports:
       - '25565:25565'
     volumes:
+      - ./data:/opt/server/_data  
       - ./worlds:/opt/server/worlds
-      - ./logs:/opt/server/logs
-      - ./data:/opt/server/_data
+      - ./logs:/opt/server/logs    
+      - ./backups:/opt/server/backups
