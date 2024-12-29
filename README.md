@@ -22,13 +22,19 @@ In order to run this container you'll need docker installed.
 Run the following command to build the image from the Dockerfile
 
 ```shell
-docker build -t minecraft-gtnh-server:1.0 .
+docker build -t minecraft-gtnh:1.0 .
 ```
 
-Then you can run the container using the docker-compose.yml
+#### Running the container
+
+Use one of the following commands to run the container
 
 ```shell
-docker compose run minecraft-gtnh-server
+docker compose up
+```
+or use the following to run the container detached in the background
+```shell
+docker compose up -d
 ```
 
 All files in the data volume will be saved every 5 minutes. If you want to manually save those you can run following command to execute a savedata script in the container.

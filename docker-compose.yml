@@ -1,6 +1,6 @@
 services:
-  minecraft-gtnh-server:
-    image: 'minecraft-gtnh-server:1.0'
+  server:
+    image: 'minecraft-gtnh:1.0'
     restart: unless-stopped
     ports:
       - '25565:25565'
