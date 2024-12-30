@@ -23,7 +23,6 @@ RUN chmod +x savedata.sh
 VOLUME /opt/server/worlds
 VOLUME /opt/server/logs
 VOLUME /opt/server/backups
-VOLUME /opt/server/config
 VOLUME /opt/server/serverutilities
 VOLUME /opt/server/_data
 CMD ["/opt/server/start.sh"]
