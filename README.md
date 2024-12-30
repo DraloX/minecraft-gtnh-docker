@@ -46,7 +46,9 @@ docker exec my-container-name ./savedata.sh
 
 #### Volumes
 
-* `data` - config files
+* `config/minecraft` - config files (server.properties, whitelist, ops, banlist)
+* `config/modconfigs` - config files for all the installed mods
+* `config/serverutilities` - config files for server utilitites (chunk claiming, chunk loading)
 * `logs` - server logs
 * `backups` - server backups
 * `worlds` - worlds directory

@@ -19,9 +19,11 @@ RUN chmod +x startserver-java9.sh
 RUN chmod +x start.sh
 RUN chmod +x copydata.sh
 RUN chmod +x savedata.sh
-# add volumes for worlds, logs and data to persist on host
+# add volumes for worlds, logs and configs to persist on host
 VOLUME /opt/server/worlds
 VOLUME /opt/server/logs
 VOLUME /opt/server/backups
+VOLUME /opt/server/config
+VOLUME /opt/server/serverutilities
 VOLUME /opt/server/_data
 CMD ["/opt/server/start.sh"]

@@ -5,7 +5,9 @@ services:
     ports:
       - '25565:25565'
     volumes:
-      - ./data:/opt/server/_data  
+      - ./config/minecraft:/opt/server/_data
       - ./worlds:/opt/server/worlds
-      - ./logs:/opt/server/logs    
+      - ./logs:/opt/server/logs
+      - ./config/modconfigs:/opt/server/config
+      - ./config/serverutilities:/opt/server/serverutilities
       - ./backups:/opt/server/backups
